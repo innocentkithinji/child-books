@@ -1,0 +1,18 @@
+.textButton {
+    padding: 5px;
+    font-size: 36px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.textButton:hover {
+    color: #61dafb;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    background: transparent;
+}
+
+

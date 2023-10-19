@@ -1,0 +1,18 @@
+/* MyLayout.css */
+.full-height-layout {
+    min-height: 100vh;  /* This will ensure the layout takes up the full viewport height */
+    display: flex;      /* Make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.full-height-layout .ant-layout-header,
+.full-height-layout .ant-layout-footer {
+    flex: 0 0 auto;   /* Header and footer should not grow or shrink and will occupy only the space they need */
+}
+
+.full-height-layout .ant-layout-content {
+    flex: 1 0 auto; /* Content will grow to take up all available space, pushing the footer to the bottom */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
